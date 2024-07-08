@@ -1,0 +1,7 @@
+server:
+  port: 8082
+
+grpc:
+  client:
+    server:
+      address: localhost:9081

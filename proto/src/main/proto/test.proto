@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package com.vk.webflux.grpc;
+
+option java_package = "com.vk.webflux.grpc";
+option java_multiple_files = true;
+
+message TestRequest{
+    string name = 1;
+    string value = 2;
+}
+message TestResponse{
+    string name = 1;
+    string value = 2;
+    string id = 3;
+}
+
+service TestService{
+    rpc TestMono(TestRequest) returns (TestResponse);
+    rpc TestFlux(TestRequest) returns (stream TestResponse);
+}
