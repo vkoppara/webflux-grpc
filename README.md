@@ -30,7 +30,8 @@ It contains server, client, and proto modules, demonstrates
 
 To - be done:
 1) implement a backend database integration (webflux supported db)
-2) Caching - Apache Ignite
+2) Caching - Apache Ignite - CDC (using Apsectj)
 3) Fully Implement Logging and tracing
 4) graphql with grpc
+5) Exception handling around GRPC exchange
 
