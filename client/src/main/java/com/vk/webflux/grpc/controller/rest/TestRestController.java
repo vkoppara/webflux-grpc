@@ -1,6 +1,5 @@
 package com.vk.webflux.grpc.controller.rest;
 
-import com.vk.webflux.grpc.TestRequest;
 import com.vk.webflux.grpc.dto.TestRequestDto;
 import com.vk.webflux.grpc.dto.TestResponseDto;
 import com.vk.webflux.grpc.service.TestClientService;
@@ -19,12 +18,12 @@ public class TestRestController {
 
     @PostMapping("/testService/mono")
     public Mono<TestResponseDto> testMono(@RequestBody TestRequestDto testRequestDto){
-        return testClientService.testMono(testRequestDto);
+        return testClientService.testMono(testRequestDto).log();
     }
 
     @PostMapping("/testService/flux")
     public Flux<TestResponseDto> testFlux(@RequestBody TestRequestDto testRequestDto){
-        return testClientService.testFlux(testRequestDto);
+        return testClientService.testFlux(testRequestDto).log();
     }
 
 

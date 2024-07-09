@@ -44,6 +44,16 @@
                 <artifactId>reactor-grpc-stub</artifactId>
                 <version>1.2.4</version>
             </dependency>
+            <dependency>
+                <groupId>ch.qos.logback</groupId>
+                <artifactId>logback-core</artifactId>
+                <version>1.5.6</version>
+            </dependency>
+            <dependency>
+                <groupId>ch.qos.logback</groupId>
+                <artifactId>logback-classic</artifactId>
+                <version>1.5.6</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
     <dependencies>

@@ -18,13 +18,13 @@ public class TestService {
         return testRequest.map(k -> TestResponse.newBuilder().setName(k.getName())
                 .setValue(k.getValue())
                 .setId(UUID.randomUUID().toString())
-                .build());
+                .build()).log();
     }
 
     public Flux<TestResponse> testFlux(Mono<TestRequest> testRequest) {
         return testRequest.map(k -> List.of(TestResponse.newBuilder().setName(k.getName())
                 .setValue(k.getValue())
                 .setId(UUID.randomUUID().toString())
-                .build())).flatMapIterable(k-> k);
+                .build())).flatMapIterable(k-> k).log();
     }
 }
