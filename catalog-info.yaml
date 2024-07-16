@@ -7,8 +7,6 @@ metadata:
 spec:
   type: service
   lifecycle: experimental
-  owner: group:pet-managers
+  owner: guests
   providesApis:
-    - petstore
-    - internal/streetlights
-    - hello-world
+    - batch-commandline
