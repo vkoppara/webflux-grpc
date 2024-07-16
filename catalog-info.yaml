@@ -5,6 +5,10 @@ metadata:
   annotations:
     github.com/project-slug: vkoppara/webflux-grpc
 spec:
-  type: other
-  lifecycle: unknown
-  owner: guests
+ type: service
+  lifecycle: experimental
+  owner: group:pet-managers
+  providesApis:
+    - petstore
+    - internal/streetlights
+    - hello-world
