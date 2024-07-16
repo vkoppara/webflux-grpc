@@ -5,7 +5,7 @@ metadata:
   annotations:
     github.com/project-slug: vkoppara/webflux-grpc
 spec:
- type: service
+  type: service
   lifecycle: experimental
   owner: group:pet-managers
   providesApis:
