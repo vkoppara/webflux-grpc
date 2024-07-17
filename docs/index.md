@@ -34,3 +34,5 @@ To - be done:
 3) Fully Implement Logging and tracing
 4) graphql with grpc
 5) Exception handling around GRPC exchange
+
+6) To build docker image locally - mvn clean install jib:dockerBuild
