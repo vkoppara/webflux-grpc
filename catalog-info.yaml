@@ -4,9 +4,8 @@ metadata:
   name: webflux-grpc
   annotations:
     github.com/project-slug: vkoppara/webflux-grpc
+    backstage.io/techdocs-ref: dir:.
 spec:
   type: service
   lifecycle: experimental
   owner: guests
-  providesApis:
-    - batch-commandline
