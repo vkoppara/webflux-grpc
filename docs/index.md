@@ -36,3 +36,5 @@ To - be done:
 5) Exception handling around GRPC exchange
 
 6) To build docker image locally - mvn clean install jib:dockerBuild
+
+7) test
